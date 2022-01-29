@@ -1,6 +1,8 @@
 import React from 'react';
 // @ts-ignore
 import Logo1 from '../../themes/logomain.png';
+import Logo from "../../logo.png"
+
 import ToggleTheme from '../Theme/ToggleTheme';
 
 
@@ -11,12 +13,16 @@ const Header = () => {
             <nav data-aos="zoom-out" data-aos-delay={800} className="navbar navbar-expand pt-0 pb-0" >
                 <div className="container header" style={{padding:'20px 0px'}}> 
                     {/* Navbar Brand*/}
-                    <a className="navbar-brand" href="/">
-                        <img className="navbar-brand-sticky" src={Logo1} alt="sticky brand-logo" style={{width:'10rem',height:'7rem'}}/>
+                    <a className="navbar-brand " href="/">
+                        <img className="navbar-brand-sticky mb-0 ml-4" src={Logo} alt="sticky brand-logo" style={{width:'65px',height:'65px'}}/>
+                        <p className='mt-1' style={{ fontSize: "10px" }}>ANCIENT ALIEN ARTEFACTS</p>
                     </a>
+                    
+
                     <div className="ml-auto" />
                     {/* Navbar */}
                     <ul className="navbar-nav items mx-auto">
+                    
                         <li className="nav-item dropdown">
                             <a className="nav-link" href="/">Home</a>
                         </li>
